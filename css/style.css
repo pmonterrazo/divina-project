@@ -1,0 +1,227 @@
+/* reset global*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* aqui está o header-container o que segura tudo */
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* aqui está todo o estilo da barra de pesquisa*/
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 4px;
+    width: 500px;
+    height: 56px;
+
+}
+
+.search:hover {
+    border: 1px solid #48AB9E;
+    box-shadow: 3px 3px 3px 3px rgba(160, 144, 144, 0.041);
+}
+
+.search img {
+    margin-left: 5px;
+}
+
+#pesquisa {
+    background-color: transparent;
+    font-size: 14px;
+    border: none;
+    height: 30px;
+    width: 400px;
+    outline: 0;
+}
+
+#pesquisa::placeholder {
+    color: #E0E0E0;
+}
+
+/* aqui está a parte aonde o usuário deve clicar para se cadastrar e fazer login */
+.conta a {
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+.conta {
+    display: flex;
+    gap: 10px;
+}
+
+.entre-cad {
+    color: #0067dd;
+}
+
+.links-conta {
+    display: block;
+}
+
+.minha-conta {
+    color: #000;
+    font-weight: bold;
+}
+
+/* esse é o header-menu ou seja aonde está o outlet,cabelos e etc */
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color:#48AB9E;
+    height: 50px;
+}
+
+.header-menu a {
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header-menu a:hover {
+    color: #5a5a5a;
+}
+
+footer {
+    bottom: 0px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: #48AB9E;
+    height: auto;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.empresa-texto h3 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.pagamentos {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+
+.pagamentos img:hover { 
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+}
+
+.pagamentos img {
+    margin-left: 10px;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.slider-bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.slider-bot img {
+    border-radius: 10px;
+}
+
+.unha {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+}
+
+.controle-imagem{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.controle-imagem span {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.box-imagem1 {
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    margin-left: 5px;
+    width: 140px;
+    height: 130px;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.box-imagem1 img {
+    margin-top: 5px;
+    margin-bottom: -4px;
+    margin-left: 20px;
+    display: flex;
+}
+
+.box-imagem1:hover {
+    -webkit-backface-visibility: hidden;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: all ease-in-out;
+}
+
+.anuncio-entrega {
+    display: flex;
+    background-color: #48AB9E;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.anuncio-entrega p {
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 10px;
+}
